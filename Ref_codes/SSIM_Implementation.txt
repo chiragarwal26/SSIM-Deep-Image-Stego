@@ -1,0 +1,21 @@
+# tuning is required as per the use case
+def get_loss_op(secret_true, secret_pred, cover_true, cover_pred, beta=0.5):
+ with tf.variable_scope("losses"):
+    beta = tf.constant(beta, name="beta")
+
+
+    # Calculate SSIM for secret and cover images
+    from skimage.metrics import structural_similarity as ssim
+
+
+
+    secret_ssim = 1 - ssim(secret_true, secret_pred, multichannel=True)
+    cover_ssim = 1 - ssim(cover_true, cover_pred, multichannel=True)
+
+
+
+    # Combine SSIM losses with weighting factor
+    final_loss = cover_ssim + beta * secret_ssim
+    return final_loss, secret_ssim, cover_ssim
+
+# additonal corr(Rc,S) losses can be adjusted where Rc = ||C-C'|| ,  S is Secret Image, C is Cover Image and C' is Container/Stego Image

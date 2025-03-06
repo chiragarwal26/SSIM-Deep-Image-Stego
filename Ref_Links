@@ -1,0 +1,36 @@
+Some of reference links are given below:
+
+#Dataset Download 
+https://storage.googleapis.com
+
+## We can proceed with COCO Dataset ( HUmans>umbrella=bagpacks>animals(cats>dogs>rest)>glasses=bottles )
+https://cocodataset.org/#explore
+
+# What exactly does CNN sees
+https://becominghuman.ai/what-exactly-does-cnn-see-4d436d8e6e52
+
+#Convolution Mathematics in CNN
+https://medium.com/analytics-vidhya/understanding-convolution-operations-in-cnn-1914045816d4
+
+# MIT Explanation of CNN
+https://youtu.be/NmLK_WQBxB4?si=5TiR2PjT0A6h51z5
+
+https://cs231n.github.io/convolutional-networks/
+
+#Choosing the right number of Conv Layers
+https://www.geeksforgeeks.org/how-to-decide-number-of-filters-in-cnn/
+
+#Choosing the right activation function
+https://medium.com/@sreeku.ralla/activation-functions-the-other-relus-a-deep-dive-part-1-38e8d356026c
+
+#SSIM error propogation maths 
+https://medium.com/srm-mic/all-about-structural-similarity-index-ssim-theory-code-in-pytorch-6551b455541e
+
+#Optimisers reference: For understanding the working, not much maths. 
+https://www.youtube.com/watch?v=MD2fYip6QsQ
+
+# Choosing the right size of kernel/filter with real world example models
+https://youtu.be/V9ZYDCnItr0?si=66H-CePNYj7Pilxa
+
+#conference link
+https://ncvpripg2024.github.io/call_for_abstract.html#!
